@@ -1,4 +1,5 @@
 #DEFAULT SETTINGS
+export PS1="\[\033[36m\][\t] \u\[\033[0m\]:\[\033[36m\][\w]:\[\033[0m\] "
 
 clear
 force_color_prompt=yes
