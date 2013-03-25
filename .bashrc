@@ -1,7 +1,10 @@
+#DEFAULT SETTINGS
+cd ~
+
 #BASH SETTINGS
 force_color_prompt=yes
-
-####################################
+EDITOR=vim
+###################################
 	#ALIASES#
 ####################################
 
@@ -12,9 +15,10 @@ alias apt-cleanup='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt
 alias update-system='sudo apt-get update;sudo apt-get upgrade'
 alias apt-search='apt-cache search'
 alias apt-show='apt-cache show'
+alias apt-update-distro='sudo apt-get update && sudo apt-get dist-upgrade'
 
 alias h='history | grep $1'
-
+alias aliaslist='grep alias ~/.bashrc'
 #anoying one! 
 alias cd..='cd ..'
 
