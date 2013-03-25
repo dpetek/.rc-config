@@ -11,8 +11,12 @@ alias apt-remove='sudo apt-get remove'
 alias apt-cleanup='sudo apt-get autoclean && sudo apt-get autoremove && sudo apt-get clean && sudo apt-get remove'
 alias update-system='sudo apt-get update;sudo apt-get upgrade'
 alias apt-search='apt-cache search'
+alias apt-show='apt-cache show'
 
 alias h='history | grep $1'
+
+#anoying one! 
+alias cd..='cd ..'
 
 #PATH ALIASES
 
