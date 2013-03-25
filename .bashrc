@@ -1,8 +1,18 @@
 #DEFAULT SETTINGS
+
+clear
+force_color_prompt=yes
+echo -ne "${LIGHTGREEN}" "Greetings, $USER. Todays date and time is, "; date
+echo -e "${RED}"; cal ;  
+echo -ne "${CYAN}";
+echo 
+echo -ne "${RED}Sysinfo:";uptime ;echo ""
+echo -ne "${LIGHTGREEN}" ; uname -sro
+
 cd ~
 
 #BASH SETTINGS
-force_color_prompt=yes
+				
 EDITOR=vim
 ###################################
 	#ALIASES#
@@ -23,7 +33,8 @@ alias aliaslist='grep alias ~/.bashrc'
 alias cd..='cd ..'
 
 #PATH ALIASES
-
+alias back='cd - > /dev/null'
+alias home='cd ~'
 
 #CUSTOM SCRIPTS
 
@@ -50,4 +61,4 @@ function apt-history(){
               cat /var/log/dpkg.log
               ;;
       esac
-}
+		}
