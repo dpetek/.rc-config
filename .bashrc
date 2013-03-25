@@ -29,12 +29,21 @@ alias apt-update-distro='sudo apt-get update && sudo apt-get dist-upgrade'
 
 alias h='history | grep $1'
 alias aliaslist='grep alias ~/.bashrc'
-#anoying one! 
+
+#anoying ones 
 alias cd..='cd ..'
 
 #PATH ALIASES
 alias back='cd - > /dev/null'
 alias home='cd ~'
+
+#GIT ALIASES
+alias git-protect='git update-index --assume-unchanged'
+alias git-unprotect='git git update-index --no-assume-unchanged'
+alias git-protected='git ls-files -v | grep "^[a-z]"'
+alias git-commit='git commit -m'
+alias git-diff='git diff --cached'
+alias git-log="git log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'"
 
 #CUSTOM SCRIPTS
 
