@@ -1,6 +1,3 @@
-.rc-config
-==========
-
 .bashrc
 ==========
 My bash config.
